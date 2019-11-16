@@ -1,6 +1,7 @@
 #ifndef _COMBOS
 #define _COMBOS
 
+#include <stdio.h>
 #include <stdbool.h>
 
 void starting_combination(int **combination, int n, int r);

@@ -26,7 +26,7 @@ bool next_combination(int **combination, int n, int r)
 	int index = index_to_increment(combination, n, r);
 	if (index == -1) {
 		// Exhausted all combinations so return the first one
-		starting_combo(combination, n, r);
+		starting_combination(combination, n, r);
 		return false;
 	} else {
 		/* Increment the value at the index and all places after that
@@ -75,7 +75,7 @@ bool next_permutation(int **permutation, int n, int r)
 			// Can't increase number at current index so move left.
 			index--;
 			if (index < 0) {
-				starting_combo(permutation, n, r);
+				starting_combination(permutation, n, r);
 				return false;
 			}
 		} else if (!is_repeat(permutation, index, val)) {
